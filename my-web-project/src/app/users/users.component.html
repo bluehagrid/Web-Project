@@ -2,7 +2,7 @@
 <ul class="users">
   <li *ngFor="let user of users"
     [class.selected]="user === selectedUser"
-    (click)="onSelect(user)">
+    (click)="onSelect(user)"></li>
     <span class="badge">{{user.id}}</span> {{user.name}}
   </li>
 </ul>
@@ -12,8 +12,11 @@
   <h2>{{selectedUser.name | uppercase}} Details</h2>
   <div><span>id: </span>{{selectedUser.id}}</div>
   <div>
-    <label>name:
-      <input [(ngModel)]="selectedUser.name" placeholder="name"/>
+    <label>
+      <input type = "radio" [(ngModel)]="selectedUser.name" placeholder="Answer"/><br />
+      <input type = "radio" [(ngModel)]="selectedUser.name" placeholder="Answer"/><br />
+      <input type = "radio" [(ngModel)]="selectedUser.name" placeholder="Answer"/><br />
+      <input type = "radio" [(ngModel)]="selectedUser.name" placeholder="Answer"/><br />
     </label>
   </div>
 
