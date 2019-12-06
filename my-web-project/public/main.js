@@ -65,7 +65,7 @@ fetch("http://localhost:3000/poll")
             });
             chart.render();
         
-             // Enable pusher logging - don't include this in production
+             
              Pusher.logToConsole = true;
         
              var pusher = new Pusher('422424dcb641e07fb1ca', {
