@@ -26,9 +26,9 @@ fetch("http://localhost:3000/poll")
         document.querySelector('#chartTitle').textContent = `Total Votes: ${totalVotes}`;
 
         let voteCounts = {
-            Windows: 0,
-            MacOS: 0,
-            Linux: 0,
+            Blue: 0,
+            Red: 0,
+            Green: 0,
             Other: 0
         };
 
@@ -38,9 +38,9 @@ fetch("http://localhost:3000/poll")
         );
 
         let dataPoints = [
-            { label: 'Windows', y: voteCounts.Windows },
-            { label: 'MacOS', y: voteCounts.MacOS },
-            { label: 'Linux', y: voteCounts.Linux },
+            { label: 'Blue', y: voteCounts.Blue },
+            { label: 'Red', y: voteCounts.Red },
+            { label: 'Green', y: voteCounts.Green },
             { label: 'Other', y: voteCounts.Other }
         ];
             
