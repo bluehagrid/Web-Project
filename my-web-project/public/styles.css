@@ -1,0 +1,17 @@
+#text {
+    font-size: xx-large;
+    text-align: center;
+  }
+ 
+
+p.sub-head{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+}
+
+p.text-content{
+    
+    text-align: center;
+}
+  
